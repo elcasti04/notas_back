@@ -11,8 +11,8 @@ const startserver = async () => {
         await sequelize.sync({ alter:true })
         console.log('base de datos lista')
         } 
-        app.listen(PORT, () => {
-            console.log(`servidor corriendo en el puerto: http://localhost${PORT}`)
+        app.listen(PORT,'0.0.0.0', () => {
+            console.log(`Servidor corriendo en http://localhost:${port}`);
         })
 	} catch (error) {
         console.log(`algo salio mal: ${(error.message )}`)
