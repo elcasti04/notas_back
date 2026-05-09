@@ -12,7 +12,7 @@ const startserver = async () => {
         console.log('base de datos lista')
         } 
         app.listen(PORT,'0.0.0.0', () => {
-            console.log(`Servidor corriendo en http://localhost:${port}`);
+            console.log(`Servidor corriendo en http://localhost:${PORT}`);
         })
 	} catch (error) {
         console.log(`algo salio mal: ${(error.message )}`)
